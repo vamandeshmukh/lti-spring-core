@@ -17,7 +17,7 @@ public class App {
 		System.out.println("Start");
 
 //		Employee emp = new Employee();
-		
+
 //		emp.work();
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
@@ -25,12 +25,12 @@ public class App {
 //		Employee emp = (Employee) context.getBean("emp");
 		Employee emp = context.getBean("emp", Employee.class);
 
-		emp.work();
+		System.out.println(emp.toString());
+
+//		emp.work();
 
 		((AbstractApplicationContext) context).close();
 		System.out.println("End");
 
 	}
 }
-
-
