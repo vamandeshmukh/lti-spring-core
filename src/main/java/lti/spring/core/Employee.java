@@ -1,5 +1,8 @@
 package lti.spring.core;
 
+// DI 
+// IoC 
+
 public class Employee {
 
 	// fields
