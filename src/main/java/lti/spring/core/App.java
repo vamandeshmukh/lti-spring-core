@@ -23,9 +23,11 @@ public class App {
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
 //		Employee emp = (Employee) context.getBean("emp");
-		Employee emp = context.getBean("emp", Employee.class);
+		Employee obj = context.getBean("emp", Employee.class);
+		Employee obj2 = context.getBean("emp", Employee.class);
 
-		System.out.println(emp.toString());
+		System.out.println(obj.toString());
+		System.out.println(obj2.toString());
 
 //		emp.work();
 
