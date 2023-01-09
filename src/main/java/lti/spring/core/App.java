@@ -28,6 +28,9 @@ public class App {
 
 		System.out.println(obj.toString());
 		System.out.println(obj2.toString());
+		obj.setSalary(12.5);
+		System.out.println(obj.toString());
+		System.out.println(obj2.toString());
 
 //		emp.work();
 
