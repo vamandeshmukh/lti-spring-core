@@ -6,7 +6,7 @@ public class JavaConfig {
 
 	@Bean
 	public Employee getEmployee() {
-		return new Employee();
+		return new Employee(103, "Tonu", 16.75);
 	}
 
 }
