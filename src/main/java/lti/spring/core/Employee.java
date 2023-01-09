@@ -1,8 +1,11 @@
 package lti.spring.core;
 
+import org.springframework.stereotype.Component;
+
 // DI 
 // IoC 
 
+@Component
 public class Employee {
 
 	// fields
