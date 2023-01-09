@@ -10,12 +10,12 @@ public class App {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hello World!");
+		System.out.println("Start");
 
-		int eid = 101; // 4
-		
 		Employee emp = new Employee();
 		emp.work();
+
+		System.out.println("End");
 
 	}
 }
