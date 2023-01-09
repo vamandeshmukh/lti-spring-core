@@ -1,6 +1,7 @@
 package lti.spring.core;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -21,11 +22,15 @@ public class App {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
-		Employee emp = context.getBean(Employee.class);
+//		Employee emp = (Employee) context.getBean("emp");
+		Employee emp = context.getBean("emp", Employee.class);
 
 		emp.work();
 
+		((AbstractApplicationContext) context).close();
 		System.out.println("End");
 
 	}
 }
+
+

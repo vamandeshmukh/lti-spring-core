@@ -7,6 +7,18 @@
 	<!-- bean definitions here -->
 
 	<bean id="emp" class="lti.spring.core.Employee">
+		<property name="eid">
+			<value>101</value>
+		</property>
+		<property name="firstName">
+			<value>Sonu</value>
+		</property>
+		<property name="salary">
+			<value>10.5</value>
+		</property>
+	</bean>
+
+	<bean id="emp2" class="lti.spring.core.Employee">
 	</bean>
 
 
