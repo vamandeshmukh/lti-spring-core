@@ -6,7 +6,10 @@
 
 	<!-- bean definitions here -->
 
-	<bean id="emp" class="lti.spring.core.Employee">
+	<!-- Property injection -->
+
+
+	<bean id="emp" class="lti.spring.core.Employee" scope="prototype">
 		<property name="eid">
 			<value>101</value>
 		</property>
@@ -18,9 +21,22 @@
 		</property>
 	</bean>
 
+	<!-- Constructor injection -->
+
 	<bean id="emp2" class="lti.spring.core.Employee">
+		<constructor-arg value="102" type="int"></constructor-arg>
+		<constructor-arg value="Monu" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="15.5" type="double"></constructor-arg>
 	</bean>
 
-
-
 </beans>
+
+
+
+
+
+
+
+
+
+
